@@ -91,6 +91,7 @@ fi
 alias ll='ls -l'
 alias meconfig='mycroft-config edit user'
 alias mra='$HOME/mycroft-core/start-mycroft.sh all restart'
+alias mrs='$HOME/mycroft-core/start-mycroft.sh skills restart'
 alias mraudio='$HOME/mycroft-core/start-mycroft.sh audio restart'
 
 #alias la='ls -A'
