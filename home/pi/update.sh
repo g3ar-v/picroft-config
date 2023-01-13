@@ -21,7 +21,7 @@
 # This script is executed by the auto_run.sh when a new version is found
 # at https://github.com/MycroftAI/enclosure-picroft/tree/buster
 
-REPO_PATH="https://raw.githubusercontent.com/MycroftAI/enclosure-picroft/buster"
+REPO_PATH="https://raw.githubusercontent.com/g3ar-v/picroft-config/main"
 
 if [ ! -f /etc/mycroft/mycroft.conf ] ;
 then
@@ -93,11 +93,11 @@ fi
 echo "Updating Picroft scripts"
 cd ~
 wget -N $REPO_PATH/home/pi/.bashrc
-wget -N $REPO_PATH/home/pi/auto_run.sh
-wget -N $REPO_PATH/home/pi/version
+# wget -N $REPO_PATH/home/pi/auto_run.sh
+# wget -N $REPO_PATH/home/pi/version
 wget -N $REPO_PATH/home/pi/update.sh  # updated within auto_run.sh, but download in case run directly
 
-cd ~/bin
-wget -N $REPO_PATH/home/pi/bin/mycroft-wipe
-chmod +x mycroft-wipe
+# cd ~/bin
+# wget -N $REPO_PATH/home/pi/bin/mycroft-wipe
+# chmod +x mycroft-wipe
 
